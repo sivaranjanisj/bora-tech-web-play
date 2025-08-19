@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Tech Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+
+<nav>
+    <ul class="navbar">
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Bora Tech Academy</h1>
+    <p>Explore our Featured Courses</p>
+</header>
+
+    <section class="slideshow-container">
+        <div class="slide fade">
+            <img src="image/ai.png" alt="Course 1">
+        </div>
+        <div class="slide fade">
+            <img src="image/dbms.png" alt="Course 2">
+        </div>
+        <div class="slide fade">
+            <img src="image/blockchain.png" alt="Course 3">
+        </div>
+        <div class="slide fade">
+            <img src="image/full.jpg" alt="Course 4">
+        </div>
+        <div class="slide fade">
+            <img src="image/Programming_Languages.png" alt="Course 5">
+        </div>
+        <div class="slide fade">
+            <img src="image/java.jpg" alt="Course 6">
+        </div>
+    </section>
+
+<center>
+<section class="course-preview" id="about">
+    <h2>Course Preview</h2>
+    
+    <h5>Training | Placement Help | Freshers & Students</h5>
+    <p>Empowering young minds to develop their skills in technology by industrial experts</p>
+    
+    <h3>Let's divide Full Stack into three parts</h3>
+    <center>
+    <ul>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        <li>Database</li>
+    </ul>
+    </center>
+    <h3>Technologies used for Full Stack</h3>
+    <table border="1">
+        <tr>
+            <th>Front-end</th> <th>Back-end</th> <th>Database</th>
+        </tr>
+        <tr>
+            <td>HTML</td> <td>Python</td> <td>MongoDB</td>
+        </tr>
+        <tr>
+            <td>CSS</td> <td>Java</td> <td>MySQL</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td> <td>NodeJS</td> <td>AWS</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <p class="social-links">
+        <a href="Register.html" id="signup">Register for course</a> | 
+        <a href="#">Instagram</a> |  
+        <a href="#">Youtube</a>
+    </p>
+</section>
+</center>
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@boratechacademy.com | Phone: +91-9876543210</p>
+    <p>Address: 123 Tech Street, Chennai, Tamil Nadu, India</p>
+    <p>© 2025 Bora Tech Academy. All rights reserved.</p>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+
+</body>
+</html>
